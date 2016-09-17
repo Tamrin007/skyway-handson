@@ -140,7 +140,7 @@ function sendImg() {
 
             // 送信
             conn = peer.connect(peer_id);
-            conn.send(expression);;
+            conn.send(expression);
 
             if (expression == 'happiness') {
                 $('.boy').prop('src', './images/boy01_laugh.png');
