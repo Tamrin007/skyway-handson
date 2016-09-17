@@ -138,12 +138,10 @@ function sendImg() {
             var scores = data[0].scores;
             var expression = getMax(scores);
 
-            // 送信
-            conn = peer.connect(peer_id);
-            conn.send(expression);
-
             if (expression == 'happiness') {
                 $('.boy').prop('src', './images/boy01_laugh.png');
+                conn = peer.connect(peer_id);
+                conn.send(expression);
             } else {
                 $('.boy').prop('src', './images/boy03_smile.png');
             }

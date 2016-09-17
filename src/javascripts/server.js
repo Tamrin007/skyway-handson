@@ -74,6 +74,7 @@ $(document).ready(function() {
         conn = connection;
 
         $('.boy').prop('src', './images/boy01_laugh.png');
+        setTimeout(neutral, 1000);
         // メッセージ受信イベントの設定
         conn.on('data', function(data) {
             alert("アラート");
@@ -81,3 +82,7 @@ $(document).ready(function() {
         });
     });
 });
+
+function neutral() {
+    $('.boy').prop('src', './images/boy03_smile.png');
+}
