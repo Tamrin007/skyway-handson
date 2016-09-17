@@ -92,7 +92,7 @@ gulp.task('image', function() {
 
 gulp.task('js', function() {
     return gulp.src(path.join(src.js, '**/*.js'))
-        .pipe(concat('all.js'))
+        //.pipe(concat('all.js'))
         .pipe(gulp.dest(build.js))
 })
 
