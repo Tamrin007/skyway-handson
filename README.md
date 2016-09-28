@@ -1,6 +1,6 @@
-# gulp.js-template
+# Skyway Handson
 
-Automate and enhance my (and your) workflow.
+視聴者の表情が分かる動画配信システム
 
 ## Requirements
 
